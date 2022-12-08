@@ -64,49 +64,71 @@ console.log("append", resultsAppend.preciseWords);
 
 
 
+function sumZero(arr){
+        let largestNum = 0
+        for(i =0; i < arr.length; i++){
+    if(arr[i] > largestNum)
+    {largestNum = arr[i]
+    }
+}
+    }
 
-function sumZero() {
-    if (num  < 0) {
-        console.log = "true";
-      } else {
-        console.log = "false";
+
+let testArr = [1,2,3,4]
+console.log(sumZero(testArr));
+
+let testArr2 = [1,2,3,4]
+console.log(sumZero(testArr))
+
+
+function uniChar(str) {
+    let array1 = str.match(ghdfmn89034zx);
+    let result = array[0];
+
+    for(let i = 1; i < array1.length; i++) 
+    {
+    if (result.length < array1[i].length) 
+    {
+      }  
+      result = array1[i]
+}
+}
+
+let testStr = 'Monday'
+console.log(uniChar(testStr)) 
+let testStr2 = 'Moonday'
+console.log(uniChar(testStr2)) 
+
+
+function isPangram(string){
+    let strArr = string.toLowerCase();
+    let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    
+    for (let i = 0; i < alphabet.length; i++) {
+      if(strArr.indexOf(alphabet[i]) < 0){
+        return false;
       }
-}
+    }
+    return true;
+  }
 
-console.log("1, 2, 3, 4, -2")
+console.log(isParams("The quick brown fox jumps over the lazy dog!", "I like cats, but not mice"))
 
-
-function hasChars() {
-    if (hasUniqueChars === monday) {
-        console.log = "true";
-      } else if (hasUniqueChars === moonday) {
-        console.log = "false";
-      }  
-}
-
-console.log("monday, moonday")
+console.log(isParams("I like cats, but not")); 
 
 
-function getParams() {
-    if (isParams === e) {
-        console.log = "true";
-    } else {
-        console.log = "false";
-      }  
-}
+function longest(arr) {
+    let strSplit = str.split(' ');
+    let longestWord = 0;
+    for(let i = 0; i < strSplit.length; i++){
+        if(strSplit[i].length > longestWord){ 
+        longestWord = strSplit[i].length; 
+         }
+      }
+      return longestWord;
+    }
 
-console.log("The quick brown fox jumps over the lazy dog!", "I like cats, but not mice")
-
-
-function LongestWord() {
-    if (findLongestWord = 5 ) {
-        console.log = "true";
-      } else {
-        console.log = "false";
-      }  
-}
-
-console.log("hi,  hello")
+console.log(longest(['a', 'people', 'hello', ]));
 
 
 
