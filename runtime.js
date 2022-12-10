@@ -64,34 +64,42 @@ console.log("append", resultsAppend.preciseWords);
 
 
 
-function sumZero(arr){
-        let largestNum = 0
-        for(i =0; i < arr.length; i++){
-    if(arr[i] > largestNum)
-    {largestNum = arr[i]
+
+function testArr(arr, num){
+    let sum = [];
+    let diff 
+    for (let i = 0; i < arr.length; i++) {
+    diff = num - arr[i]
+        if (sum[diff]){
+            return true
+        } else {
+            sum[arr[i]] = true
+        }
     }
+    return false
 }
-    }
+
+let addZero = testArr [1, 2, 3, -2];
+
+let addZero2 = testArr [1, 2, 3, -2];
 
 
-let testArr = [1,2,3,4]
-console.log(sumZero(testArr));
-
-let testArr2 = [1,2,3,4]
-console.log(sumZero(testArr))
 
 
 function uniChar(str) {
-    let array1 = str.match(ghdfmn89034zx);
-    let result = array[0];
+    const characterCount = {}; 
+    for(let i = 0; i < str.length; i++) {
+        const char = str[i];
+        characterCount[char] = characterCount[char] + 1 || 1; 
+    }
+    for(let i = 0; i < str.length; i++) {
+        const char = str[i];
+        if (characterCount[char] === 1){
+            return i;
+        }
+    }
 
-    for(let i = 1; i < array1.length; i++) 
-    {
-    if (result.length < array1[i].length) 
-    {
-      }  
-      result = array1[i]
-}
+return -1;
 }
 
 let testStr = 'Monday'
@@ -112,23 +120,26 @@ function isPangram(string){
     return true;
   }
 
+  isPangram(10) 
+
 console.log(isParams("The quick brown fox jumps over the lazy dog!", "I like cats, but not mice"))
 
 console.log(isParams("I like cats, but not")); 
 
 
-function longest(arr) {
-    let strSplit = str.split(' ');
-    let longestWord = 0;
-    for(let i = 0; i < strSplit.length; i++){
-        if(strSplit[i].length > longestWord){ 
-        longestWord = strSplit[i].length; 
-         }
-      }
-      return longestWord;
-    }
+const str = ['a', 'people', 'hello'];
 
-console.log(longest(['a', 'people', 'hello', ]));
+const longestword = (str) => {
+const strArray = str.split(" ");
+const sortedStrArray = strArray.sort(
+    (strA, strB) => {
+        return strB.length - strA.length;
+}
+);
+return sortedStrArray[0]; 
+}
+
+console.log(longestword(str));
 
 
 
